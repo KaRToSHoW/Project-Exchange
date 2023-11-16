@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Биржа проектов</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <img src="#" alt="Логотип" class="header__logo">
+        <nav class="header__navigation nav">
+            <a href="#" class="nav__link">Главная</a>
+            <a href="#" class="nav__link">Категории</a>
+            <a href="#" class="nav__link">Избранное</a>
+            <form method="GET" class="nav__form form">
+                <label class="form__label-search">
+                    <input type="search" placeholder="Найти проект..." class="form__input-search" />
+                </label>
+                <button type="submit" class="form__button"><img class="form__img" alt="Искать" src="#"></button>
+            </form>
+            <a class="nav__button" href="#">Создать проект</a>
+            <a href="#" class="nav__mail"></a>
+            <button class="nav__notifications"></button>
+            <a href="/user.html"></a>
+        </nav>
+    </header>
+    <main>
+        <section class="about-project">
+            <div class="about-project__wrapper">
+                <img src="#" alt="Изображение прототипа">
+                <h1 class="about-project__title">scorkl</h1>
+                <p class="about-project__description">Набор биодобавок для повышения энергии и снижения стресса</p>
+                <div class="about-project__supervisor supervisor">
+                    <img class="supervisor__image" src="#" alt="Иван Иванов">
+                    <p class="supervisor__name">Иван Иванов</p>
+                    <p class="supervisor__job-title">Руководитель проекта</p>
+                </div>
+            </div>
+            <div class="about-project__collection collection">
+                <p class="collection__collected">142 368 ₽</p>
+                <p class="collection__left">/500 000 ₽</p>
+                <progress class="collection__progress-bar" value="50" max="100"></progress>
+                <p class="collection__date">Открыт 127 дней назад</p>
+                <a href="#" class="collection__button">Поддержать проект</a>
+            </div>
+            <div class="about-project__information information">
+                <nav class="information__navigation">
+                    <button class="information__navigation-button">Стадии разработки</button>
+                    <button class="information__navigation-button">Новости проекта</button>
+                    <button class="information__navigation-button">Обсуждение</button>
+                    <button class="information__navigation-button">Вопросы</button>
+                </nav>
+                <div class="information__stage stage">
+                    <p class="stage__title">Текущий этап: Тестирование</p>
+                    <p class="stage__description">Перед тем как начать продавать продукт, мы несколько раз пробуем его сами, посещаем производство.
+                        И только при условии того, что продукт вкусный, содержит безопасные и полезные для человека
+                        ингредиенты, а производство соблюдает стандарты, мы начнем продавать продукт.</p>
+                    <ol class="stage__list">
+                        <li class="stage__item">
+                            <div class="stage__phase-img"></div>
+                            <p class="stage__phase">Аналитика</p>
+                        </li>
+                        <li class="stage__item">
+                            <div class="stage__phase-img"></div>
+                            <p class="stage__phase">Производство</p>
+                        </li>
+                        <li class="stage__item">
+                            <div class="stage__phase-img"></div>
+                            <p class="stage__phase">Тестирование</p>
+                        </li>
+                        <li class="stage__item">
+                            <div class="stage__phase-img"></div>
+                            <p class="stage__phase">Реализация</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!-- <footer class="footer">
+            <div class="footer__wrapper">
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>    
+            </div>
+        </footer> дизайн нужно исправить-->
+    </main>
 </body>
+
 </html>
