@@ -1,11 +1,170 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Биржа проектов</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <img src="#" alt="Логотип" class="header__logo">
+        <nav class="header__navigation nav">
+            <a href="#" class="nav__link">Главная</a>
+            <a href="#" class="nav__link">Категории</a>
+            <a href="#" class="nav__link">Избранное</a>
+            <form method="GET" class="nav__form form">
+                <label class="form__label-search">
+                    <input type="search" placeholder="Найти проект..." class="form__input-search" />
+                </label>
+                <button type="submit" class="form__button"><img class="form__img" alt="Искать" src="#"></button>
+            </form>
+            <a class="nav__button" href="#">Создать проект</a>
+            <a href="#" class="nav__mail"></a>
+            <button class="nav__notifications"></button>
+            <a href="/user.html"></a>
+        </nav>
+    </header>
+    <main>
+        <section class="admin">
+            <div class="admin__wrapper">
+                <h1 class="admin__title">Панель администратора</h1>
+                <ul class="admin__list">
+                    <li class="admin__item">
+                        <a href="#" class="admin__button">Проекты</a>
+                    </li>
+                    <li class="admin__item">
+                        <a href="#" class="admin__button">пользователи</a>
+                    </li>
+                    <li class="admin__item">
+                        <a href="#" class="admin__button">Аналитика</a>
+                    </li>
+                    <li class="admin__item">
+                        <a href="#" class="admin__button">Отчеты</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="projects__wrapper">
+                <div class="projects__title-wrapper">
+                    <h2 class="projects__title">Популярные</h2>
+                    <a class="projects__link" href="#">Смотреть все</a>
+                </div>
+                <ol class="projects__list">
+                    <li class="projects__item item">
+                        <img src="/img/Rectangle 14.jpg" alt="Фонарик F1-123" class="item__image">
+                        <h2 class="item__title">Фонарик F1-123</h2>
+                        <img class="item__bookmark" src="/img/fi-rr-bookmark (1).svg" alt="Закладка">
+                        <p class="item__description">Самый маленький в мире фонарик, заряжающийся от солнечной энергии
+                        </p>
+                        <p class="item__collected">72 368 ₽</p><span class="item__collect">/ 100 000 ₽</span>
+                        <progress class="item__progress-bar" value="50" max="100"></progress>
+                        <p class="item__date">Открыт 12 дней назад</p>
+                        <img class="item__icon-time" src="/img/fi-rr-time-past.svg" alt="Прошло времени">
+                    </li>
+                    <li class="projects__item item">
+                        <img src="#" alt="ИИ-диктофон" class="item__image">
+                        <h2 class="item__title">ИИ-диктофон</h2>
+                        <img class="item__bookmark" src="/img/fi-rr-bookmark (1).svg" alt="Закладка">
+                        <p class="item__description">Поможет распознать, записать и воспроизвести любую речь</p>
+                        <p class="item__collected">3 368₽</p><span class="item__collect">/ 20 000 ₽</span>
+                        <progress class="item__progress-bar" value="20" max="100"></progress>
+                        <p class="item__date">Открыт 2 дня назад</p>
+                        <img class="item__icon-time" src="/img/fi-rr-time-past.svg" alt="Прошло времени">
+                    </li>
+                    <li class="projects__item item">
+                        <img src="#" alt="NFC-ring" class="item__image">
+                        <h2 class="item__title">NFC-ring</h2>
+                        <img class="item__bookmark" src="/img/fi-rr-bookmark (1).svg" alt="Закладка">
+                        <p class="item__description">Оплачивай покупки в одно касание с помощью этого кольца</p>
+                        <p class="item__collected">52 368₽</p><span class="item__collect">/ 100 000 ₽</span>
+                        <progress class="item__progress-bar" value="30" max="100"></progress>
+                        <p class="item__date">Открыт 10 дней назад</p>
+                        <img class="item__icon-time" src="/img/fi-rr-time-past.svg" alt="Прошло времени">
+                    </li>
+                    <li class="projects__item item">
+                        <img src="#" alt="Фонарик F1-123" class="item__image">
+                        <h2 class="item__title">skorkl</h2>
+                        <img class="item__bookmark" src="/img/fi-rr-bookmark (1).svg" alt="Закладка">
+                        <p class="item__description">Набор биодобавок для повышения энергии и снижения стресса</p>
+                        <p class="item__collected">142 368₽</p><span class="item__collect">/ 500 000 ₽</span>
+                        <progress class="item__progress-bar" value="30" max="100"></progress>
+                        <p class="item__date">Открыт 127 дней назад</p>
+                        <img class="item__icon-time" src="/img/fi-rr-time-past.svg" alt="Прошло времени">
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="projects__wrapper">
+                <div class="projects__title-wrapper">
+                    <h2 class="projects__title">Недавно добавленные</h2>
+                    <a class="projects__link" href="#">Смотреть все</a>
+                </div>
+                <ol class="projects__list">
+                    <li class="projects__item item">
+                        <img src="/img/Rectangle 14.jpg" alt="Фонарик F1-123" class="item__image">
+                        <h2 class="item__title">Фонарик F1-123</h2>
+                        <img class="item__bookmark" src="/img/fi-rr-bookmark (1).svg" alt="Закладка">
+                        <p class="item__description">Самый маленький в мире фонарик, заряжающийся от солнечной энергии
+                        </p>
+                        <p class="item__collected">72 368 ₽</p><span class="item__collect">/ 100 000 ₽</span>
+                        <progress class="item__progress-bar" value="50" max="100"></progress>
+                        <p class="item__date">Открыт 12 дней назад</p>
+                        <img class="item__icon-time" src="/img/fi-rr-time-past.svg" alt="Прошло времени">
+                    </li>
+                    <li class="projects__item item">
+                        <img src="#" alt="ИИ-диктофон" class="item__image">
+                        <h2 class="item__title">ИИ-диктофон</h2>
+                        <img class="item__bookmark" src="/img/fi-rr-bookmark (1).svg" alt="Закладка">
+                        <p class="item__description">Поможет распознать, записать и воспроизвести любую речь</p>
+                        <p class="item__collected">3 368₽</p><span class="item__collect">/ 20 000 ₽</span>
+                        <progress class="item__progress-bar" value="20" max="100"></progress>
+                        <p class="item__date">Открыт 2 дня назад</p>
+                        <img class="item__icon-time" src="/img/fi-rr-time-past.svg" alt="Прошло времени">
+                    </li>
+                    <li class="projects__item item">
+                        <img src="#" alt="NFC-ring" class="item__image">
+                        <h2 class="item__title">NFC-ring</h2>
+                        <img class="item__bookmark" src="/img/fi-rr-bookmark (1).svg" alt="Закладка">
+                        <p class="item__description">Оплачивай покупки в одно касание с помощью этого кольца</p>
+                        <p class="item__collected">52 368₽</p><span class="item__collect">/ 100 000 ₽</span>
+                        <progress class="item__progress-bar" value="30" max="100"></progress>
+                        <p class="item__date">Открыт 10 дней назад</p>
+                        <img class="item__icon-time" src="/img/fi-rr-time-past.svg" alt="Прошло времени">
+                    </li>
+                    <li class="projects__item item">
+                        <img src="#" alt="Фонарик F1-123" class="item__image">
+                        <h2 class="item__title">skorkl</h2>
+                        <img class="item__bookmark" src="/img/fi-rr-bookmark (1).svg" alt="Закладка">
+                        <p class="item__description">Набор биодобавок для повышения энергии и снижения стресса</p>
+                        <p class="item__collected">142 368₽</p><span class="item__collect">/ 500 000 ₽</span>
+                        <progress class="item__progress-bar" value="30" max="100"></progress>
+                        <p class="item__date">Открыт 127 дней назад</p>
+                        <img class="item__icon-time" src="/img/fi-rr-time-past.svg" alt="Прошло времени">
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <!-- <footer class="footer">
+        <div class="footer__wrapper">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>    
+        </div>
+    </footer> дизайн нужно исправить-->
 </body>
+
 </html>

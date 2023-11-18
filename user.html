@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Биржа проектов</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    
+    <header class="header">
+        <img src="#" alt="Логотип" class="header__logo">
+        <nav class="header__navigation nav">
+            <a href="#" class="nav__link">Главная</a>
+            <a href="#" class="nav__link">Категории</a>
+            <a href="#" class="nav__link">Избранное</a>
+            <form method="GET" class="nav__form form">
+                <label class="form__label-search">
+                    <input type="search" placeholder="Найти проект..." class="form__input-search" />
+                </label>
+                <button type="submit" class="form__button"><img class="form__img" alt="Искать" src="#"></button>
+            </form>
+            <a class="nav__button" href="#">Создать проект</a>
+            <a href="#" class="nav__mail"></a>
+            <button class="nav__notifications"></button>
+            <a href="/user.html"></a>
+        </nav>
+    </header>
+    <main>
+        <section class="user">
+            <div class="user__wrapper">
+                <img src="/img/christian-buehner-DItYlc26zVI-unsplash 1.jpg" alt="christian-buehner" class="user__img">
+                <h1 class="user__title">Мои данные</h1>
+                <ul class="user__list">
+                    <li class="user__item">
+                        <p class="user__name">ФИО:<span>Иванов Иван Иванович</span></p>
+                    </li>
+                    <!-- <li class="user__item">
+                        <p class="user__grup">ФИО:<span>231-322</span></p>
+                    </li> -->
+                    <li class="user__item">
+                        <p class="user__Specialization">Специализация:<span>Веб-разработка</span></p>
+                    </li>
+                    <li class="user__item">
+                        <p class="user__Email">E-mail:<a href="mailto:testmail@mail.ru">testmail@mail.ru</a></p>
+                    </li>
+                    <li class="user__item">
+                        <button class="user__button">Выйти из аккаунта</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="about-me">
+            <div class="about-me__wrapper">
+                <nav class="about-me__navigation navigation">
+                    <button class="navigation__button">Информация о себе</button>
+                    <button class="navigation__button">Мои проекты</button>
+                    <button class="navigation__button">Мои вложения</button>
+                    <button class="navigation__button">Избранное</button>
+                </nav>
+                <div class="Personal-information">
+                    <h2 class="Personal-information__title">Информация о себе</h2>
+                    <p class="Personal-information__description">Привет! Меня зовут Иванов Иван.</p>
+                    <p class="Personal-information__description">Я опытный frontend-разработчик с фокусом на создании
+                        высококачественных и интерактивных веб-приложений. Обладаю навыками работы с HTML, CSS и
+                        JavaScript, а также фреймворков (например, React).</p>
+                    <p class="Personal-information__description">Моей целью является создание пользовательских
+                        интерфейсов,
+                        которые сочетают в себе эстетику и функциональность.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- <footer class="footer">
+        <div class="footer__wrapper">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>    
+        </div>
+    </footer> дизайн нужно исправить-->
 </body>
+
 </html>
