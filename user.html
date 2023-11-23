@@ -1,95 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Биржа проектов</title>
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/user.css">
 </head>
-
 <body>
     <header class="header">
-        <img src="#" alt="Логотип" class="header__logo">
+        <div class="header__logo__wrapper">
+            <div class="header__logo logo_picture"></div>
+            <div class="header__logo"></div>
+        </div>
         <nav class="header__navigation nav">
-            <a href="#" class="nav__link">Главная</a>
+            <a href="/index.html" class="nav__link">Главная</a>
             <a href="#" class="nav__link">Категории</a>
             <a href="#" class="nav__link">Избранное</a>
-            <form method="GET" class="nav__form form">
-                <label class="form__label-search">
-                    <input type="search" placeholder="Найти проект..." class="form__input-search" />
-                </label>
-                <button type="submit" class="form__button"><img class="form__img" alt="Искать" src="#"></button>
-            </form>
-            <a class="nav__button" href="#">Создать проект</a>
-            <a href="#" class="nav__mail"></a>
-            <button class="nav__notifications"></button>
-            <a href="/user.html"></a>
+                <form action="" method="get">
+                <input type="text" name="q" class="input is-white" placeholder="Найти проект">
+                <button class="field-search__btn is-white" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 32 32" width="32" height="32" stroke="currentColor">
+                    <g fill="none">
+                      <g transform="rotate(-45 18.036 2.636)">
+                        <path d="M7.423 15.5h1v5.923h-1z"></path>
+                        <circle cx="7.5" cy="7.5" r="7.5"></circle>
+                      </g>
+                    </g>
+                  </svg>
+                </button>
+                </form>
+            <a id="new_project" class="nav__button" href="#">Создать проект</a>
+            <a href="#" class="nav__mail"><div id="messege"></div></a>
+            <div class="nav__notifications"></div>
+            <a id="user" href="/user.html"></a>
         </nav>
-    </header>
+      </header>
+
     <main>
-        <section class="user">
-            <div class="user__wrapper">
-                <img src="/img/christian-buehner-DItYlc26zVI-unsplash 1.jpg" alt="christian-buehner" class="user__img">
-                <h1 class="user__title">Мои данные</h1>
-                <ul class="user__list">
-                    <li class="user__item">
-                        <p class="user__name">ФИО:<span>Иванов Иван Иванович</span></p>
+        <section class="details">
+            <div class="main__wrapper">
+                <img src="/img/christian-buehner-DItYlc26zVI-unsplash 1.jpg" alt="" class="details__img">
+                <ul class="details__list">
+                    <li class="details__iteam">
+                        <h1 class="  details__title">Мои данные</h1>
                     </li>
-                    <!-- <li class="user__item">
-                        <p class="user__grup">ФИО:<span>231-322</span></p>
-                    </li> -->
-                    <li class="user__item">
-                        <p class="user__Specialization">Специализация:<span>Веб-разработка</span></p>
+                    <li class="details__iteam">
+                        <p class=" q fio">ФИО:<span>Иванов Иван Иванович</span></p>
                     </li>
-                    <li class="user__item">
-                        <p class="user__Email">E-mail:<a href="mailto:testmail@mail.ru">testmail@mail.ru</a></p>
+                    <li class="details__iteam">
+                        <p class=" q grup">ФИО:<span>231-322</span></p>
                     </li>
-                    <li class="user__item">
-                        <button class="user__button">Выйти из аккаунта</button>
+                    <li class="details__iteam">
+                        <p class=" q special">Специализация:<span>Веб-разработка</span></p>
+                    </li>
+                    <li class=" q details__iteam">
+                        <p class=" q mail">E-mail:<span>testmail@mail.ru</span></p>
+                    </li>
+                    <li class=" q details__iteam">
+                        <button class="details__button">Выйти из аккаунта</button>
                     </li>
                 </ul>
             </div>
         </section>
+
         <section class="about-me">
-            <div class="about-me__wrapper">
-                <nav class="about-me__navigation navigation">
-                    <button class="navigation__button">Информация о себе</button>
-                    <button class="navigation__button">Мои проекты</button>
-                    <button class="navigation__button">Мои вложения</button>
-                    <button class="navigation__button">Избранное</button>
-                </nav>
+            <div class="main__wrapper">
+                <ul class="main__list">
+                    <li class="information__navigation">
+                        <button class="information__navigation-button">Информация о себе</button>
+                    </li>
+                    <li class="information__navigation">
+                         <button class="information__navigation-button">Мои проекты</button>
+                    </li>
+                    <li class="information__navigation">
+                         <button class="information__navigation-button">Мои вложения</button>
+                    </li>
+                    <li class="information__navigation">
+                         <button class="information__navigation-button">Избранное</button>
+                    </li>
+                </ul>
+
                 <div class="Personal-information">
                     <h2 class="Personal-information__title">Информация о себе</h2>
-                    <p class="Personal-information__description">Привет! Меня зовут Иванов Иван.</p>
-                    <p class="Personal-information__description">Я опытный frontend-разработчик с фокусом на создании
-                        высококачественных и интерактивных веб-приложений. Обладаю навыками работы с HTML, CSS и
-                        JavaScript, а также фреймворков (например, React).</p>
-                    <p class="Personal-information__description">Моей целью является создание пользовательских
-                        интерфейсов,
-                        которые сочетают в себе эстетику и функциональность.</p>
+                    <p class="Personal-information__txt">Привет! Меня зовут Иванов Иван.</p>
+                    <p class="Personal-information__txt">Я опытный frontend-разработчик с фокусом на создании высококачественных и интерактивных веб-приложений. Обладаю навыками работы с HTML, CSS и JavaScript, а также фреймворков (например, React).</p>
+                    <p class="Personal-information__txt">Моей целью является создание пользовательских интерфейсов, которые сочетают в себе эстетику и функциональность.</p>
                 </div>
-            </div>
+
+            </div>   
         </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer__wrapper">
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>    
+					<div class="first_half half">
+						<div class="ministri">
+							<p>Министерство науки и высшего образования РФ</p>
+							<p>Министерство просвящения РФ</p>
+						</div>
+						<div class="contacts">
+							<a style="background-image: url('files/vk.png');" class="contact" href="#" target="_blank"></a>
+							<a style="background-image: url('files/tg.png');" class="contact" href="#" target="_blank"></a>
+							<a style="background-image: url('files/r.png');" class="contact" href="#" target="_blank"></a>
+							<a style="background-image: url('files/youtube.png');" class="contact" href="#" target="_blank"></a>
+							<a style="background-image: url('files/email.png');" class="contact" href="#" target="_blank"></a>
+							<a style="background-image: url('files/odn.png');" class="contact" href="#" target="_blank"></a>
+						</div>
+					</div>
+					<div class="second_half half">
+						<p>&#169; 2023 федеральное государственное автономное образовательное учреждение <br> высшего образования &#171;Московский политехнический университет&#187;, <br>Московский Политех</p>
+					</div>
         </div>
-    </footer> дизайн нужно исправить-->
+    </footer>
+    <script src="/admin.jsы"></script>
 </body>
-
 </html>
