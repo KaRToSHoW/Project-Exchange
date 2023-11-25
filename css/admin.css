@@ -54,7 +54,7 @@ section {
 }
 .header__navigation a:hover{
 	transition: 0.75s;
-	color: red;
+	color: #EE3D50;
 	
 }
 form{
@@ -104,7 +104,7 @@ input {
 }
 #new_project:hover{
 	transition: 0.75s;
-	background-color: red;
+	background-color: #EE3D50;
 	transform: scale(0.95, 0.95);
 }
 .nav__mail{
@@ -192,7 +192,7 @@ section{
 }
 .admin__button:hover{
 	transition: 0.75s;
-	background-color: rgb(255, 0, 0);
+	background: #EE3D50;
 }
 .admin__button:active{
 	transition: 0.1s;
@@ -217,7 +217,7 @@ section{
 }
 .projects__link:hover{
 	transition: 0.75s;
-	color: red;
+	color: #EE3D50;
 }
 .items_wrapper{
 	display: flex;
