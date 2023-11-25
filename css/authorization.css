@@ -1,0 +1,178 @@
+/* roboto-condensed-300 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/roboto-condensed-v27-cyrillic_latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-condensed-regular - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-condensed-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/roboto-condensed-v27-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-condensed-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/roboto-condensed-v27-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-condensed-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/roboto-condensed-v27-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* roboto-condensed-800 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/roboto-condensed-v27-cyrillic_latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+
+:root{
+    font-size: 62.5%;
+}
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'roboto condensed',monospace;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: row-reverse; 
+}
+.Logo__wrapper{
+    background-color: black;
+    min-height: 768px;
+    min-width: 650px;
+}
+.authorization__title{
+    color: #000;
+    text-align: center;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 130px;
+}
+.authorization__wrapper{
+    min-width: 716px;
+}
+.authorization__form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+
+}
+.authorization__label-login{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    color: #000;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 22px;
+}
+.authorization__label-password{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    color: #000;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 22px;
+}
+.authorization__input{
+    border: 1px solid black;
+    min-width: 495px;
+    min-height: 50px;
+    margin-top: 15px;
+    font-size: 3rem;
+    padding: 0 5px;
+}
+.authorization__button{
+    min-width: 502px;
+    min-height: 67px;
+    border: 0;
+    background: #EE3D50;
+    color: #FFF;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 45px;
+    padding: 0;
+}
+.authorization__link{
+    color: #406AB4;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+    margin-top: 32px;
+}
+.Logo__title{
+    color: #FFF;
+    text-align: center;
+    font-size: 5.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.Logo__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Logo_images{
+    margin-top: 280px;
+    display: flex;
+    border-bottom: 3px solid white;
+    padding-bottom: 34px;
+}
+.Logo_image{
+    height: 100px;
+    margin-right: 45px;
+    margin-top: 6px;
+}
+.Logo_image-title{
+    height: 100px;
+}
+.Logo__title{
+    margin-top: 35px;
+}

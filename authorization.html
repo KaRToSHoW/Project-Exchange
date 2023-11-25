@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/authorization.css">
     <title>Биржа проектов</title>
 </head>
 
@@ -12,7 +14,7 @@
         <section class="authorization">
             <div class="authorization__wrapper">
                 <h1 class="authorization__title">Авторизация</h1>
-                <form class="authorization__form">
+                <form class="authorization__form" method="post">
                     <label class="authorization__label-login">
                         <input class="authorization__input" name="login" type="text">Введите ваш логин:
                     </label>
@@ -26,7 +28,10 @@
         </section>
         <section class="Logo">
             <div class="Logo__wrapper">
-                <img src="#" alt="Московский Политех">
+                <div class="Logo_images">
+                    <img class="Logo_image" src="/files/mospolytech-logo-white.png" alt="Московский Политех">
+                    <img class="Logo_image-title" src="/files/mospolytech-logo-white.svg" alt="Московский Политех">
+                </div>
                 <p class="Logo__title">Биржа проектов</p>
             </div>
         </section>
