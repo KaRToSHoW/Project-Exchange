@@ -16,13 +16,15 @@
                 <h1 class="authorization__title">Авторизация</h1>
                 <form class="authorization__form" method="post">
                     <label class="authorization__label-login">
-                        <input class="authorization__input" name="login" type="text">Введите ваш логин:
+                        <input class="authorization__input" name="login" type="text" required>Введите ваш логин:
                     </label>
                     <label class="authorization__label-password">
-                        <input class="authorization__input" name="password" type="password">Введите ваш пароль:
+                        <input class="authorization__input" name="password" type="password" required>Введите ваш пароль:
                     </label>
                     <button class="authorization__button" type="submit">Войти в систему</button>
                     <a class="authorization__link" href="#">Забыли пароль?</a>
+                    <a class="authorization__link" href="/index.html">Войти как гость</a>
+                    <a class="authorization__link" href="/admin.html">Войти как администратор</a>
                 </form>
             </div>
         </section>

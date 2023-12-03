@@ -5,27 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Биржа проектов</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="/css/admin.css">
 </head>
 
 <body>
     <header class="header">
-        <img src="#" alt="Логотип" class="header__logo">
-        <nav class="header__navigation nav">
-            <a href="#" class="nav__link">Главная</a>
-            <a href="#" class="nav__link">Категории</a>
-            <a href="#" class="nav__link">Избранное</a>
-            <form method="GET" class="nav__form form">
-                <label class="form__label-search">
-                    <input type="search" placeholder="Найти проект..." class="form__input-search" />
-                </label>
-                <button type="submit" class="form__button"><img class="form__img" alt="Искать" src="#"></button>
-            </form>
-            <a class="nav__button" href="#">Создать проект</a>
-            <a href="#" class="nav__mail"></a>
-            <button class="nav__notifications"></button>
-            <a href="/user.html"></a>
-        </nav>
-    </header>
+		<div class="header__logo__wrapper">
+			<div class="header__logo logo_picture"></div>
+			<div class="header__logo"></div>
+		</div>
+		<nav class="header__navigation nav">
+			<a href="/index.html" class="nav__link">Главная</a>
+			<a href="#" class="nav__link">Категории</a>
+			<a href="#" class="nav__link">Избранное</a>
+			<form action="" method="get">
+				<input type="text" name="q" class="input is-white" placeholder="Найти проект">
+				<button class="field-search__btn is-white" type="submit">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -2 32 32" width="32" height="32"
+						stroke="currentColor">
+						<g fill="none">
+							<g transform="rotate(-45 18.036 2.636)">
+								<path d="M7.423 15.5h1v5.923h-1z"></path>
+								<circle cx="7.5" cy="7.5" r="7.5"></circle>
+							</g>
+						</g>
+					</svg>
+				</button>
+			</form>
+			<a id="new_project" class="nav__button" href="#">Создать проект</a>
+			<a href="#" class="nav__mail">
+				<div id="messege"></div>
+			</a>
+			<div class="nav__notifications"></div>
+			<a id="user" href="/user.html"></a>
+		</nav>
+	</header>
     <main>
         <section class="about-project">
             <div class="about-project__wrapper">

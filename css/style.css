@@ -346,3 +346,7 @@ footer{
 	transition: 0.75s;
 	opacity: 1;
 }
+.item__title{
+	text-decoration: none;
+	color: #000;
+}
